@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif; 
+}
+
+.island {
+  width: 85px;
+  background-color: #000;
+  height: 25px;
+  border-radius: 50px;
+  position: absolute;
+  top: 37px;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.island:hover {
+  cursor: pointer;
+  width: 75%;
+  height: 60px;
+  border-radius: 70px;
+  transition: 0.3s ease;
+}
+
+.island-content {
+  opacity: 0;
+  transform: scale(0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0 0.6em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.island:hover .island-content {
+  transition: 0.3s ease;
+}
+
+.player {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.player-picture {
+  width: 40px;
+  margin-right: 0.7em;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.player-details {
+  color: #fff;
+}
+
+.player-details p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.3;
+  margin: 0 0 0.5em 0;
+}
+
+.player-details h2 {
+  white-space: nowrap;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f5f5f5;
+}
